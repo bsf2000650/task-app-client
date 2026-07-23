@@ -46,6 +46,8 @@ jobs:
               --name task-client \
               --restart unless-stopped \
               -p 80:80 \
+              -p 443:443 \
+              -v /etc/letsencrypt:/etc/letsencrypt:ro \
               ${{ secrets.DOCKER_USERNAME }}/task-app-client:latest
 
             docker image prune -f
