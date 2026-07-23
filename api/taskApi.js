@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4000';
+const BASE_URL = '';
 
 export async function getTasks() {
   const response = await fetch(`${BASE_URL}/api/tasks`);
