@@ -23,7 +23,7 @@ jobs:
         run: |
           docker build \
             -t ${{ secrets.DOCKER_USERNAME }}/task-app-client:latest \
-            ./client
+            .
 
       - name: Push Docker Image
         run: |
