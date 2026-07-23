@@ -60,7 +60,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Tasks</h1>
+      <h1>Tasks V1</h1>
 
       <form onSubmit={handleAddTask}>
         <input
